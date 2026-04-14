@@ -292,7 +292,7 @@ h2::after {
 }
 
 .timeline-content {
-  padding: 20px;
+  padding: 40px;
   background: #fff;
   position: relative;
   border-radius: 6px;
@@ -311,6 +311,11 @@ h2::after {
   color: var(--secondary-color);
 }
 
+.timeline-content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
