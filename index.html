@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li>
-                 <a href="https://medium.com/@janedoe" class="nav-link" class="download-link">
+                 <a href="https://drive.google.com/file/d/1VaT98weD_LyjNsvKwm9F_Qlqd5hZf4jm" class="nav-link" class="download-link">
                 <i class="fa-solid fa-download"></i>
                 <span>Resume</span>
                 </a>
@@ -80,7 +80,7 @@
                             I believe that the combination of technical competence and a strong sense of responsibility can bring real value to any team.
                         </p>
                     </div>
-                    <img src="img/coding.jpg" alt="Jane Doe working" class="about-image">
+                    <img src="img/coding.jpg" alt="working" class="about-image">
                 </div>
             </div>
         </section>
@@ -162,29 +162,58 @@
         <section id="projects" class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Featured Projects</h2>
-                <div class="projects">
-                    <div class="project-card" data-aos="fade-up">
-                        <img src="img/p1.jpeg" alt="AI-Powered Personal Assistant" class="project-image">
-                        <div class="project-info">
-                            <h3>AI-Powered Personal Assistant</h3>
-                            <p>A sophisticated personal assistant utilizing advanced NLP and machine learning algorithms for unparalleled user interaction and task management.</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                        <img src="img/p2.jpeg" alt="Quantum Computing Simulator" class="project-image">
-                        <div class="project-info">
-                            <h3>Quantum Computing Simulator</h3>
-                            <p>An advanced simulator for quantum computing operations, facilitating research and development in quantum algorithms and applications.</p>
-                        </div>
-                    </div>
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                        <img src="img/p3.jpeg" alt="Augmented Reality Navigation System" class="project-image">
-                        <div class="project-info">
-                            <h3>AR Navigation System</h3>
-                            <p>A state-of-the-art augmented reality navigation application overlaying real-time information and directions onto the user's environment.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="about-content">
+            <div class="about-text">
+                <h4>Machine Learning Application for Stock Price Prediction (2026)</h4>
+                <p>
+                    The goal of this project is predicting whether the next day’s closing price will rise or fall.
+                    The data comes from the Kaggle “S&P 500 Stock Prices” collection, covering 505 stocks from March 2013 to February 2018, with over 600,000 total records.
+                    We designed a dual-module architecture: the classification module uses Random Forest and LightGBM to predict price direction;
+                    the regression module uses XGBoost and LightGBM to forecast the exact closing price.
+                    Deliverables include: daily prediction CSV files for all 505 stocks, model performance comparison tables, and a fully reproducible code repository.
+                    I was responsible for modeling XGBoost and LightGBM, training both models, and writing the report.
+                </p>
+                <p>https://github.com/CDS524-Giant/CDS524_Group_Project</p>
+            </div>
+            <img src="img/p1.jpeg" alt="Coding" class="about-image">
+        </div>
+
+        <div class="about-content" style="margin-top: 50px;">
+            <div class="about-text">
+                <h4>Computer Vision-Based Eye Detection System for Driver (2025)</h4>
+                <p>
+                    This project aims to build a precise, real-time, human-centered closed-loop detection solution that maximizes driving safety while minimizing driving interference.
+                    Using MediaPipe Face Mesh, the system extracts 468 real-time 3D facial keypoints from a camera and calculates Eye Aspect Ratio,
+                    blink frequency, PERCLOS, etc., generating a 215-dimensional multi-modal feature vector
+                    . The dataset is labeled into three fatigue levels: normal, light fatigue, heavy fatigue.
+                    A three-layer “Data – Model – Decision” closed-loop architecture is adopted:Data layer: MediaPipe extracts eye and facial features;
+                    Model layer: Random Forest and CNN perform three-level fatigue classification, supported by incremental training for personalization;
+                    Decision layer: Q-Learning outputs voice/visual intervention commands, forming a closed loop of “detection → decision → feedback”.
+                    It successfully builds a low false-alarm, adaptive intelligent intervention system,
+                    significantly improving driving safety and user acceptance compared to traditional methods.
+                    I was responsible for data-layer MediaPipe feature extraction and EAR/PERCLOS calculation.
+                </p>
+                <p>https://github.com/S1M0nLEE/Foundation-of-AI</p>
+            </div>
+            <img src="img/p2.jpeg" alt="Teamwork" class="about-image">
+        </div>
+
+        <div class="about-content" style="margin-top: 50px;">
+            <div class="about-text">
+                <h4>Dodge Bullets: A Q-Learning Based Anti-Aircraft Defense System (2026)</h4>
+                <p>
+                    This project addresses how to enable an AI to autonomously learn aiming and shooting through reinforcement learning.
+                    Data is generated in real time by the game environment; no external dataset is used. Key fields include: the aircraft’s x‑coordinate,
+                    the current angle of the anti‑aircraft cannon, whether the aircraft is within firing range, and the reward value obtained at each step.
+                    The Q‑learning algorithm is adopted. State discretization is applied to build a Q‑table. An ε‑greedy strategy balances exploration and exploitation,
+                    and the AI is trained over 20,000 episodes to learn an optimal aiming policy.The trained AI increases its average reward from approximately 1,000 to over 6,000, achieving high accuracy in hitting both moving and stationary targets.
+                    The project delivers a playable game demo that demonstrates real‑time tracking and shooting capabilities.
+                    This is an individual project.
+                </p>
+                <p>https://github.com/chunxi-lan/DodgeBullets_524_Assignment1</p>
+            </div>
+            <img src="img/p3.jpeg" alt="Learning" class="about-image">
+        </div>
             </div>
         </section>
 
